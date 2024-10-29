@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>test strona</title>
+</head>
+<body>
+<h1>test strona</h1>
+
+	<button onclick="alert1()">Alert</button>
+	<button onclick="nowa1()">Otwórz stronę</button>
+	<button onclick="pokaconf()">Confirm & Prompt</button>
+
+<script>
+	function alert1() 
+{
+	alert("ALERT!!!!");
+}
+	function nowa1() 
+{
+	window.open("https://zse.edu.gdansk.pl/pl");
+}
+	function pokaconf() 
+{
+	if (confirm("czy chcesz podać swoje imię?")) 
+{
+	let imie = prompt("jak masz na imię?");
+	if (imie) alert("witaj, " + imie + "!");
+}
+}
+</script>
+</body>
+	<!-- Marcel Smagieł 3K -->
+</html>
