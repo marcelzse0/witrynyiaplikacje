@@ -6,24 +6,26 @@
 </head>
 <body>
 <h1>test strona</h1>
-
+	
+	<!-- przycisk pokazujący alert -->
 	<button onclick="alert1()">Alert</button>
+	<!-- przycisk otwierający nową stronę -->
 	<button onclick="nowa1()">Otwórz stronę</button>
+	<!-- Przycisk pokazujący confirm i prompt -->
 	<button onclick="pokaconf()">Confirm & Prompt</button>
 
 <script>
-	function alert1() 
-{
+	// wyświetla okno alert
+	function alert1() {
 	alert("ALERT!!!!");
 }
-	function nowa1() 
-{
+	// otwiera nową stronę w nowym oknie
+	function nowa1() {
 	window.open("https://zse.edu.gdansk.pl/pl");
 }
-	function pokaconf() 
-{
-	if (confirm("czy chcesz podać swoje imię?")) 
-{
+	// wyświetla okno confirm a potem prompt z pytaniem o imię
+	function pokaconf() {
+	if (confirm("czy chcesz podać swoje imię?")) {
 	let imie = prompt("jak masz na imię?");
 	if (imie) alert("witaj, " + imie + "!");
 }
